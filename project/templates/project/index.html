@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="{% static "css/style.css" %}" rel="stylesheet" type="text/css" />
+    <title>AiwaPhotes</title>
+</head>
+<body>
+    <p><a name="top"></a></p>
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo"><a href="{% url 'index' %}">Aiwa<span class="black">Photes</span><span class="gray">.ru</span></a><p></p></div>
+            <ul class="nav">
+                <li><a href="{% url 'index' %}" class="active">Главная</a></li>
+                <li><a href="{% url 'photographs' %}">Фотографы</a></li>
+
+            </ul>
+        </div>
+        <div class="content">
+            <div class="main">
+                <p></p>
+                <h1>Это главная страница сайта. Здесь будут размещаться последние новости сайта</h1>
+                <p>
+                    <a href="bestpr.html">
+                        <img src="images/photo0.jpg" width="600"
+                             height="400" border="0" alt="места">
+                    </a>
+
+                    <a href="children.html">
+                        <img src="children/photo2t0.jpg" width="300"
+                             height="400" border="0" alt="дети">
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p><a href="#top">Наверх</a></p>
+        </div>
+    </div>
+</body>
+</html>
